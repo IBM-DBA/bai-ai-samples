@@ -12,3 +12,9 @@ A sample notebook that explains how to use the data stored in Business Automatio
 ### Querying data and building charts from Business Automation Insights data
 
 A sample notebook that explains how to use the process execution data of Business Automation Insights to create charts 
+
+# License
+The notebook found in this project are licensed under the [Apache License 2.0](LICENSE).
+
+# Notice
+© Copyright IBM Corporation 2019.
