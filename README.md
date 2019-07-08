@@ -13,11 +13,11 @@ A sample notebook that explains how to use the data stored in Business Automatio
 
 A sample notebook that explains how to use the process execution data of Business Automation Insights to create charts 
 
-### Analyzing automated loan approvals
+### Analyzing automated loan approval decisions
 
 Few notebooks to perform descriptive analytics on automated decisions. The notebooks show how to read decisions precedently written on a data lake though IBM Business Automation Insights.
 
-### Analyzing the rule coverage in automated loan approvals
+### Analyzing the rule coverage in automated loan approval decisions
 
 A sample notebook that show how to get insights about your decisions have been automated in a loan approval ddecision making.
 What are the rules always executed in your decisions? Never executed?
