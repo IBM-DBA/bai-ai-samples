@@ -15,7 +15,7 @@ A sample notebook that explains how to use the process execution data of Busines
 
 ### Analyzing automated loan approval decisions
 
-Few notebooks to perform descriptive analytics on automated decisions. The notebooks show how to read decisions precedently written on a data lake though IBM Business Automation Insights.
+Few notebooks to perform descriptive analytics on automated decisions. The notebooks show how to read decisions precedently written on a data lake though IBM Business Automation Insights. We leverage Python, Brunel and Seaborn to visualize the decisions to better understand them at the light of the data.
 
 ### Analyzing the rule coverage in automated loan approval decisions
 
