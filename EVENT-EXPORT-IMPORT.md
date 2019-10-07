@@ -16,7 +16,7 @@ export NODE_TLS_REJECT_UNAUTHORIZED=0
 
 # Dump 10 BAI events
 elasticdump \
-  --input=https://<user>:<password>@host:port/<odm-timeseries-index> \
+  --input=https://<user>:<password>@<host>:<port>/<odm-timeseries-index> \
   --output=/tmp/odm-timeseries-idx-file.json \
   --type=data \
   --size=100
@@ -30,7 +30,7 @@ export NODE_TLS_REJECT_UNAUTHORIZED=0
 
 # Dump all BAI events
 elasticdump \
-  --input=https://<user>:<password>@host:port/<odm-timeseries-index> \
+  --input=https://<user>:<password>@>host>:<port>/<odm-timeseries-index> \
   --output=/tmp/odm-timeseries-idx-file.json \
   --type=data
 ```
@@ -41,14 +41,15 @@ Read a local BAI timeserie exported as a JSONL file and import it in a anotehr E
 ```shell
 elasticdump \
   --input /tmp/odm-timeseries-idx-file.json \
-  --output=https://<user>:<password>@host:port/<odm-timeseries-index>
+  --output=https://<user>:<password>@<host>:<port>/<odm-timeseries-index>
  ```
  
  ## Combined Export & Import of a BAI event timeserie
  Be aware that elasicdump tool supports ElasticSearch server to server import/export and other features.
+ Read elasticdump page for more details.
  ```shell
  elasticdump \
-  --input=http://production.es.com:9200/my_index \
-  --output=http://staging.es.com:9200/my_index \
+  --input=https//:<user>:<password>@<host>:<port>/<odm-timeseries-index> \
+  --output=https//<user>:<password>@<host>:<port>/<odm-timeseries-index> \
   --type=data
 ```
