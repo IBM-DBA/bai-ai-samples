@@ -8,8 +8,10 @@ See instructions at https://www.npmjs.com/package/elasticdump
 
 ### Connect and export a timeserie from the BAI Elastic server
 
+Connect to the BAI Elastic server to get the 10 first events from a given timeserie index "odm-timeseries-index"
+
 ```shell
-#Workaround certificate
+##Optionaly to go through when a self certificte error occurs
 export NODE_TLS_REJECT_UNAUTHORIZED=0
 
 # Dump 10 BAI events
@@ -18,4 +20,17 @@ elasticdump \
   --output=/tmp/odm-timeseries-idx-file.json \
   --type=data \
   --size=100
+```
+
+Connect to the BAI Elastic server to get all events from a given timeserie index "odm-timeseries-index"
+
+```shell
+##Optionaly to go through when a self certificte error occurs
+export NODE_TLS_REJECT_UNAUTHORIZED=0
+
+# Dump all BAI events
+elasticdump \
+  --input=https://<user>:<password>@host:port/<odm-timeseries-index> \
+  --output=/tmp/odm-timeseries-idx-file.json \
+  --type=data
 ```
