@@ -36,6 +36,8 @@ elasticdump \
 ```
 
 # Import BAI events into another ElasticSearch
+
+Read a local BAI timeserie exported as a JSONL file and import it in a anotehr Elastic Search instance.
 ```shell
 elasticdump \
   --input /tmp/odm-timeseries-idx-file.json \
