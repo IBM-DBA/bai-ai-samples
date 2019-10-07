@@ -1,14 +1,14 @@
 # Export & Import Business Automation Insights events 
 
-## Export BAI events from your Elastic server
+## Export BAI events from your elasticsearch server
 
 ### Install elasticdump
-Install the elasticdump tool to connect to an Elastic server, export and import timeseries.
+Install the elasticdump tool to connect to an elasticsearch server, export and import timeseries.
 See instructions at https://www.npmjs.com/package/elasticdump
 
-### Connect and export a timeserie from the BAI Elastic server
+### Connect and export a timeserie from the BAI elasticsearch server
 
-Connect to the BAI Elastic server to get the 10 first events from a given timeserie index "odm-timeseries-index"
+Connect to the BAI elasticsearch server to get the 10 first events from a given timeserie index "odm-timeseries-index"
 
 ```shell
 ##Optionally to go through when a self certificte error occurs
@@ -22,7 +22,7 @@ elasticdump \
   --size=100
 ```
 
-Connect to the BAI Elastic server to get all events from a given timeserie index "odm-timeseries-index"
+Connect to the BAI elasticsearch server to get all events from a given timeserie index "odm-timeseries-index"
 
 ```shell
 ##Optionaly to go through when a self certificte error occurs
@@ -35,7 +35,7 @@ elasticdump \
   --type=data
 ```
 
-## Import BAI events into another ElasticSearch
+## Import BAI events into another elasticsearch instance
 
 Read a local BAI timeserie exported as a JSONL file and import it in a anotehr Elastic Search instance.
 ```shell
