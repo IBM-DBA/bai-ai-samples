@@ -51,7 +51,7 @@ elasticdump \
   --size=100
 ```
 
-# Import data into ElasticSearch
+# Import BAI events into another ElasticSearch
 ```shell
 elasticdump \
   --input /tmp/odm-timeseries-idx-file.json \
