@@ -50,3 +50,10 @@ elasticdump \
   --type=data \
   --size=100
 ```
+
+# Import data into ElasticSearch
+```shell
+elasticdump \
+  --input /tmp/odm-timeseries-idx-file.json \
+  --output=https://<user>:<password>@host:port/<odm-timeseries-index>
+```
