@@ -19,7 +19,7 @@ elasticdump \
   --input=https://<user>:<password>@<host>:<port>/<odm-timeseries-index> \
   --output=/tmp/odm-timeseries-idx-file.json \
   --type=data \
-  --size=100
+  --size=10
 ```
 
 Connect to the BAI elasticsearch server to get all events from a given timeserie index "odm-timeseries-index"
