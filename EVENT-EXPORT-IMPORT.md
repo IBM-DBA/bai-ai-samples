@@ -42,4 +42,6 @@ Read a local BAI timeserie exported as a JSONL file and import it in a anotehr E
 elasticdump \
   --input /tmp/odm-timeseries-idx-file.json \
   --output=https://<user>:<password>@host:port/<odm-timeseries-index>
+  
+  Be aware that elasicdump tool supports ElasticSearch server to server import/export and other features.
 ```
