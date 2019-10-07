@@ -35,13 +35,20 @@ elasticdump \
   --type=data
 ```
 
-# Import BAI events into another ElasticSearch
+## Import BAI events into another ElasticSearch
 
 Read a local BAI timeserie exported as a JSONL file and import it in a anotehr Elastic Search instance.
 ```shell
 elasticdump \
   --input /tmp/odm-timeseries-idx-file.json \
   --output=https://<user>:<password>@host:port/<odm-timeseries-index>
-  
-  Be aware that elasicdump tool supports ElasticSearch server to server import/export and other features.
+ ```
+ 
+ ## Combined Export & Import of a BAI event timeserie
+ Be aware that elasicdump tool supports ElasticSearch server to server import/export and other features.
+ ```shell
+ elasticdump \
+  --input=http://production.es.com:9200/my_index \
+  --output=http://staging.es.com:9200/my_index \
+  --type=data
 ```
