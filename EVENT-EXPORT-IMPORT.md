@@ -1,4 +1,4 @@
-# Export Business Automation Insights events 
+# Export & Import Business Automation Insights events 
 
 ## Export BAI events from your Elastic server
 
@@ -33,4 +33,20 @@ elasticdump \
   --input=https://<user>:<password>@host:port/<odm-timeseries-index> \
   --output=/tmp/odm-timeseries-idx-file.json \
   --type=data
+```
+
+### Connect and expimport a timeserie into a BAI Elastic server
+
+Connect to the BAI Elastic serverto import a given <odm-timeseries-idx-file> JSONL file.
+
+```shell
+##Optionaly to go through when a self certificte error occurs
+export NODE_TLS_REJECT_UNAUTHORIZED=0
+
+# Dump 10 BAI events
+elasticdump \
+  --input=https://<user>:<password>@host:port/<odm-timeseries-index> \
+  --output=/tmp/odm-timeseries-idx-file.json \
+  --type=data \
+  --size=100
 ```
