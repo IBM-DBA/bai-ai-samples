@@ -1,4 +1,4 @@
-# Export 
+# Export Business Automation Insights events 
 
 ## Export BAI events from your Elastic server
 
