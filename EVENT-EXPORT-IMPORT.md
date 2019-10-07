@@ -1,6 +1,6 @@
 # Export & Import Business Automation Insights events 
 
-## Export BAI events from your elasticsearch server
+## Export BAI events from your elastic search server
 
 ### Install elasticdump
 Install the elasticdump tool to connect to an elasticsearch server, export and import timeseries.
