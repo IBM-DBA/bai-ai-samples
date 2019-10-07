@@ -22,6 +22,9 @@ Few notebooks to perform descriptive analytics on automated decisions. The noteb
 A sample notebook that show how to get insights about your decisions have been automated in a loan approval ddecision making.
 What are the rules always executed in your decisions? Never executed?
 
+### Exporting and Importing BAI events
+[Export and import of BAI events](../blob/master/EVENT-EXPORT-IMPORT.md)
+
 # License
 The notebook found in this project are licensed under the [Apache License 2.0](LICENSE).
 
