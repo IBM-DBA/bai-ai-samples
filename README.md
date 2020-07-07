@@ -19,7 +19,7 @@ Few notebooks to perform descriptive analytics on automated decisions. The noteb
 
 ### Analyzing the rule coverage in automated loan approval decisions
 
-A sample notebook that show how to get insights about your decisions have been automated in a loan approval ddecision making.
+A sample notebook that show how to get insights about your decisions have been automated in a loan approval decision making.
 What are the rules always executed in your decisions? Never executed?
 
 ### Exporting and Importing BAI events
