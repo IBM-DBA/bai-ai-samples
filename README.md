@@ -22,7 +22,7 @@ Few notebooks to perform descriptive analytics on automated decisions. The noteb
 A sample notebook that show how to get insights about your decisions have been automated in a loan approval decision making.
 What are the rules always executed in your decisions? Never executed?
 
-[Analyzing the rule coverage in automated decisions](./notebooks/Analyzing the rule coverage in automated decisions.ipynb)
+[Analyzing the rule coverage in automated decisions](./notebooks/"Analyzing the rule coverage in automated decisions.ipynb")
  
 ### Exporting and Importing BAI events
 [Export and import of BAI events](./EVENT-EXPORT-IMPORT.md)
